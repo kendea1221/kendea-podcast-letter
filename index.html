@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kendea_Talk_Letter</title>
+</head>
+<body>
+
+    <div class="contactform">
+        <p class="title">Kendea_Talkへのお便りはこちらから</p>
+        <p class="rogo-chui">ロゴ募集の方はこのままロゴを選択しそのまま送信してください。<br>後でメールアドレスにフォームを再送します。</p>
+        <p class="kanki">このフォームの質問はすべて必須項目です。<br>すべて入力しないと正しく送れない場合がありますのでご了承ください。</p>
+
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <input type="hidden" name="accessKey" value="f873698e-13e9-4ad0-898c-fe63a16c7b77"> <!-- Required -->
+            <div class="item">
+                <label class="label">ラジオネーム</label>
+                <input type="text" class="inputs" name="name">
+            </div>
+            <div class="item">
+                <label class="label">ラジオネーム(よみがな)</label>
+                <input type="text" class="inputs" name="radioname">
+            </div>
+            <div class="item">
+                <label class="label">メールアドレス</label>
+                <input type="email" class="inputs" name="email">
+            </div>
+            <div class="item">
+                <label class="label">メールアドレス(確認)</label>
+                <input type="email" class="inputs" name="email">
+            </div>
+            <div class="item">
+                <p class="label">お便りの種類</p>
+                <div class="inputs">
+                    <input type="radio" name="menu" id="hutuota" value="hutuota" ><label for="hutuota" >普通のお便り</label>
+                </div>
+
+                <div class="inputs">
+                    <input type="radio" name="menu" id="rogo" value="rogo"><label for="rogo" >ロゴ募集</label>
+                </div>
+            </div>
+
+            <div class="item">
+                <label class="label">コメント</label>
+                <textarea class="massege" placeholder="こちらへコメントmesお願いします。" name="name"></textarea>
+            </div>
+
+            <div class="button-area">
+                <input type="submit" value="送信"></int>
+                <input type="reset" value="リセット">
+            </div>
+        </form>
+        </form>
+    </div>
+</body>
+</html>
